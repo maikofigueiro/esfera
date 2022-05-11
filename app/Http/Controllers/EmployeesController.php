@@ -23,7 +23,7 @@ class EmployeesController extends Controller
         /*
          * Busca todos os funcionarios e empresa
          */
-        $employees = Employee::all();
+        $employees = Employee::paginate(15);
 
         return view('employees', ['employees' => $employees]);
     }

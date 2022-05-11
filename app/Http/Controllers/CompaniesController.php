@@ -22,7 +22,7 @@ class CompaniesController extends Controller
         /*
          * Busca todas as empresas
          */
-        $companies = Companie::all();
+        $companies = Companie::paginate(15);
 
         return view('companies', ['companies' => $companies]);
     }
