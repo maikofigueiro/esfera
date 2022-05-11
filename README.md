@@ -1,4 +1,4 @@
-# dataVisiooh
+# Esfera
 
 ## 💻 Pré-requisitos
 
@@ -16,10 +16,13 @@ Para rodar o projeto, siga estas etapas:
 composer install
 ```
 ```
+php artisan migrate
+```
+```
 php artisan db:seed
 ```
 ```
-php artisan migrate
+php artisan storage:link
 ```
 3. Rode o projeto localmente
 ```
