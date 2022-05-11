@@ -20,6 +20,7 @@ class CreateEmployeesTable extends Migration
             $table->unsignedBigInteger('id_company');
             $table->string('email')->unique();
             $table->string('telephone');
+            $table->softDeletes();
             $table->timestamps();
         });
 

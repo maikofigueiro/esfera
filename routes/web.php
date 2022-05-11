@@ -36,7 +36,6 @@ Route::group(['middleware' => 'auth'], function () {
     // Rotas funcionarios
     Route::get('employees', [EmployeesController::class, 'list'])->name('employees');
     Route::get('employees/create', [EmployeesController::class, 'edit'])->name('employeeCreat');
-    //Route::get('employees/create', function () {return view('newEmployee');})->name('employeeCreat');
     Route::post('employees/save', [EmployeesController::class, 'save'])->name('employeeSave');
     Route::get('employees/edit/{id}', [EmployeesController::class, 'edit'])->name('employeeEdit');
     Route::get('employees/delete/{id}', [EmployeesController::class, 'delete'])->name('employeeDelete');
