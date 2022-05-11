@@ -10,7 +10,7 @@
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 bg-white border-b border-gray-200">
                         <a href="{{ route('companyCreat') }}" class="button mb-4">Cadastrar nova empresa</a>
-                        <table class="table">
+                        <table class="table p-6">
                             <thead>
                                 <tr>
                                     <th>Empresa</th>
@@ -41,7 +41,9 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        {{ $companies->links() }}
+                        <div class="links mt-5">
+                            {{ $companies->links() }}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1434,6 +1434,9 @@ select {
   background-color: #bf4a4a !important;
 }
 
+.links p {
+  display: none;
+}
 //-------------------------------------------------
 
 * {
